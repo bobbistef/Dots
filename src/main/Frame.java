@@ -15,6 +15,7 @@ public class Frame extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		add(menu);
+		menu.setBounds(0, 0, menu.width(), menu.height());
 		
 		setVisible(true);
 	}
