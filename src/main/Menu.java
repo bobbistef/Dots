@@ -1,5 +1,6 @@
 package main;
 
+import java.awt.Color;
 import java.awt.Toolkit;
 
 import javax.swing.JButton;
@@ -17,15 +18,15 @@ public class Menu extends JPanel {
 		setVisible(true);
 	}
 	public void setUpMenu(){
-		setFocusable(false);
+		setLayout(null);
+		setOpaque(true);
+		setBackground(Color.white);
 		add(start);
 		add(hscores);
 		add(exit);
-		start.setBounds(w/2, h/6, w/4, h/6);
-		start.setVisible(true);
-		hscores.setBounds(w/2, 3*h/6, w/4, h/6);
-		exit.setBounds(w/2, 5*h/6, w/4, h/6);
-		System.out.println("setup");
+		start.setBounds(w/4, h/4, w/2, h/12);
+		hscores.setBounds(w/4, 5*h/12, w/2, h/12);
+		exit.setBounds(w/4, 7*h/12, w/2, h/12);
 	}
 	public int height(){
 		return h;
@@ -33,5 +34,7 @@ public class Menu extends JPanel {
 	public int width(){
 		return w;
 	}
-	
+	public class MenuButton extends JButton{
+		
+	}
 }
