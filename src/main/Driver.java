@@ -7,6 +7,7 @@ public class Driver {
 
 	}
 	public void start(){
+		Frame f=new Frame();
 		
 	}
 }
